@@ -1,0 +1,22 @@
+--- ./build-df3120/linux.minifs/arch/arm/plat-s3c24xx/gpiolib.c	2011-01-07 23:39:58.000000000 +0100
++++ ./build-df3120/linux/arch/arm/plat-s3c24xx/gpiolib.c	2012-08-15 11:00:53.733246122 +0200
+@@ -174,6 +174,9 @@
+ 			.ngpio			= 11,
+ 		},
+ 	},
++
++#ifdef CONFIG_GPIOS_FOR_S3C2443
++
+ 		/* GPIOS for the S3C2443 and later devices. */
+ 	{
+ 		.base	= S3C2440_GPJCON,
+@@ -212,6 +215,9 @@
+ 			.ngpio			= 2,
+ 		},
+ 	},
++
++#endif
++
+ };
+ 
+ 
