@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.36.3
-# Wed Aug 15 22:34:09 2012
+# Mon Aug 13 22:34:36 2012
 #
 CONFIG_ARM=y
 CONFIG_HAVE_PWM=y
@@ -986,7 +986,8 @@ CONFIG_MMC_S3C_PIODMA=y
 # CONFIG_ACCESSIBILITY is not set
 CONFIG_RTC_LIB=y
 CONFIG_RTC_CLASS=y
-# CONFIG_RTC_HCTOSYS is not set
+CONFIG_RTC_HCTOSYS=y
+CONFIG_RTC_HCTOSYS_DEVICE="rtc0"
 # CONFIG_RTC_DEBUG is not set
 
 #
