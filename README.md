@@ -8,8 +8,7 @@ and
 
 improvments of the workflow/turn around times)
 
-NOTE:
------
+Note:
 
 In case of brand-new installation of 'minifs' by this time some changes have been taken place in version numbers and URLs.
 
