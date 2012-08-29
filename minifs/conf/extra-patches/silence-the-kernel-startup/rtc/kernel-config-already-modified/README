@@ -1,0 +1,25 @@
+In case you have already modified your kernel configuration you can get a merge conflict.
+
+To aviod this you should disable the real time clock by hand:
+
+  Invoke './df3120_minifs_build.sh kernel_menuconfig'
+
+  Go to down to 
+
+    Device Drivers 					// Press 'Select' button
+
+  Then search for
+
+    [*] Real Time Clock					// Press 'Select' button
+
+  Then set the focus on
+
+    [*]  Set system time from RTC on startup and resume	// Press space bar to deselect
+
+  Press 'Exit' button until the message box appears which will ask you to save the new kernel configuration.
+
+  Press 'Yes' button.
+
+  Invoke './df3120_minifs_build.sh' to compile the kernel with the new configuration.
+
+

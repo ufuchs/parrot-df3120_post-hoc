@@ -1,0 +1,13 @@
+There are two options:
+
+1.Meanwhile the kernel configuration has been modifed/adjusted. Is no longer virgin.
+
+  So you have to go to the directory 'kernel-config-already-modified'.
+
+2.You are proud of your brand-new installed 'minifs'.
+  In this case you have to go to 'kernel-config-yet-virgin'
+
+The READMEs in this subdirectories will give you further informations.
+
+
+
