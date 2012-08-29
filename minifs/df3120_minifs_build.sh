@@ -26,5 +26,6 @@ if [[ $PATH != *"$TOOLCHAIN_HOME"* ]]; then
 fi
 
 # invokes the true 'minifs_build.sh' script
-"$BASE"/minifs_build.sh "$1" "$2"
+"$BASE"/minifs_build.sh "$@"
+
 
