@@ -1,0 +1,19 @@
+Use this in case of a fresh installed 'minifs'.
+
+In case of a modified/adjusted 'minifs' you can give it a try. 
+
+But it's possible to run into a merge conflict.
+
+1.Check for conflicts:
+
+  git apply --check rtc.patch
+
+  If you run into trouble stop here and switch to the directory 'kernel-config-already-modified'.
+  
+2.Patch your 'config_kernel.conf'
+
+  git am --signoff < rtc.patch
+
+
+
+

@@ -1,0 +1,35 @@
+From eb40cc7307e48b86754da3d86613b7b69ddac260 Mon Sep 17 00:00:00 2001
+From: Uli Fuchs <ufuchs@gmx.com>
+Date: Wed, 29 Aug 2012 20:16:32 +0200
+Subject: [PATCH 5/5] config_kernel.conf: rtc disabled
+
+---
+ conf/board/df3120/config_kernel.conf |    5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/conf/board/df3120/config_kernel.conf b/conf/board/df3120/config_kernel.conf
+index 31b1f07..0acec85 100644
+--- a/conf/board/df3120/config_kernel.conf
++++ b/conf/board/df3120/config_kernel.conf
+@@ -1,7 +1,7 @@
+ #
+ # Automatically generated make config: don't edit
+ # Linux kernel version: 2.6.36.3
+-# Mon Feb  7 22:57:23 2011
++# Wed Aug 29 17:47:08 2012
+ #
+ CONFIG_ARM=y
+ CONFIG_HAVE_PWM=y
+@@ -996,8 +996,7 @@ CONFIG_MMC_S3C_PIODMA=y
+ # CONFIG_ACCESSIBILITY is not set
+ CONFIG_RTC_LIB=y
+ CONFIG_RTC_CLASS=y
+-CONFIG_RTC_HCTOSYS=y
+-CONFIG_RTC_HCTOSYS_DEVICE="rtc0"
++# CONFIG_RTC_HCTOSYS is not set
+ # CONFIG_RTC_DEBUG is not set
+ 
+ #
+-- 
+1.7.9.5
+
