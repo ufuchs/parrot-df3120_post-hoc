@@ -1,0 +1,7 @@
+###
+# State : untested
+###
+
+This patch fixes the kernel message
+
+  's3c2410_udc: debugfs dir creation failed -19'

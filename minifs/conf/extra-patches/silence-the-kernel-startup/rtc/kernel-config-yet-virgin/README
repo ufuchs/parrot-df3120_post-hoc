@@ -1,3 +1,8 @@
+###
+# STATE : applicable
+# PREREQUESTS : installed 'minifs', yet virgin
+###
+
 Use this in case of a fresh installed 'minifs'.
 
 In case of a modified/adjusted 'minifs' you can give it a try. 

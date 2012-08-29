@@ -1,0 +1,29 @@
+###
+# State      : outstanding run of 'minifs_build.sh' + run on DF3120
+# Prerequest : at least one successful run of 'minifs_build.sh'
+###
+
+This patch fixes the kernel message
+  
+  'gpiochip_add: gpios 288..303 (GP'
+  'gpiochip_add: gpios 320..334 (GP'
+  'gpiochip_add: gpios 352..353 (GP'
+
+Let's start:
+
+  1.Copy 
+
+      apply-gpiolib-patch.sh
+      gpiolib.diff
+
+    into the root of 'minifs'
+
+  2.Invoke './apply-gpiolib-patch.sh'
+
+  3.Invoke './df3120_minifs_build.sh'
+
+  4.Tidy up the copied stuff.
+
+
+  
+
