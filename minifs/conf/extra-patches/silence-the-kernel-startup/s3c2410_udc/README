@@ -1,7 +1,24 @@
 ###
-# State : untested
+# STATE       : outstanding run of 'minifs_build.sh' + run on DF3120
+# PREREQUESTS : at least one successful run of 'minifs_build.sh'
 ###
 
 This patch fixes the kernel message
 
   's3c2410_udc: debugfs dir creation failed -19'
+
+Let's start:
+
+  1.Copy 
+
+      apply-s3c2410_udc-patch.sh
+      s3c4210_udc.diff
+
+    into the root of 'minifs'
+
+  2.Invoke './apply-s3c2410_udc-patch.sh'
+
+  3.Invoke './df3120_minifs_build.sh'
+
+  4.Tidy up the copied stuff.
+
