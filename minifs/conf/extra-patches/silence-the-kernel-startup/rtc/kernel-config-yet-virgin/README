@@ -1,5 +1,5 @@
 ###
-# STATE : applicable
+# STATE       : applicable
 # PREREQUESTS : installed 'minifs', yet virgin
 ###
 
@@ -9,15 +9,17 @@ In case of a modified/adjusted 'minifs' you can give it a try.
 
 But it's possible to run into a merge conflict.
 
-1.Check for conflicts:
+Let's start:
 
-  git apply --check rtc.patch
+  1.Check for conflicts:
 
-  If you run into trouble stop here and switch to the directory 'kernel-config-already-modified'.
+    git apply --check rtc.patch
+
+    If you run into trouble stop here and switch to the directory 'kernel-config-already-modified'.
   
-2.Patch your 'config_kernel.conf'
+  2.Patch your 'config_kernel.conf'
 
-  git am --signoff < rtc.patch
+    git am --signoff < rtc.patch
 
 
 

@@ -1,5 +1,5 @@
 ###
-# STATE       : outstanding run of 'minifs_build.sh' + run on DF3120
+# STATE       : applicable
 # PREREQUESTS : at least one successful run of 'minifs_build.sh'
 ###
 

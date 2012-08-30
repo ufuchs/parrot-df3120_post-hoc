@@ -9,13 +9,13 @@ This patch fixes the kernel message
 
 Let's start.
 
-There are two options:
+  There are two options:
 
-1.Meanwhile you have modifed/adjusted the kernel configuration. It's no longer virgin.
+  1.Meanwhile you have modifed/adjusted the kernel configuration. It's no longer virgin.
 
-  So you have to go to the directory 'kernel-config-already-modified'.
+    So you have to go to the directory 'kernel-config-already-modified'.
 
-2.You are proud of your brand-new installed 'minifs'.
-  In this case you have to go to 'kernel-config-yet-virgin'
+  2.You are proud of your brand-new installed 'minifs'.
+    In this case you have to go to 'kernel-config-yet-virgin'
 
 The READMEs in this subdirectories will give you further informations.
