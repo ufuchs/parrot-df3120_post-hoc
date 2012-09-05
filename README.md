@@ -18,19 +18,40 @@ This is still in progress but the basics yet exists.
 
 Note:
 
-In case of brand-new installation of 'minifs' by this time some changes have been taken place in version numbers and URLs.
+From my knowledge there are two minifs repositories
 
-Invoking 'minifs_build.sh' on an unpatched 'minifs' will cause errors in downloads.
+- https://sites.google.com/site/repurposelinux/df3120 --> http://oomz.net/git/minifs.git
 
-To fix this circumstance please apply the 'packages-adjust-versions-2012-AUG.patch' first after installation of 'minifs'.
+  The repo is in a froozen state and a pull request results in no changes(date 2012-SEP-05).
 
-Copy and paste(Ctrl-Shift-V) into your console
+  But by this time some changes have been taken place in version numbers and URLs.
 
-1. 'git apply --check packages-adjust-versions-2012-AUG.patch'
+  Invoking 'minifs_build.sh' from this repo will cause errors in downloads.
 
-   check the output before you invoke the next command!
+  To fix this circumstance please apply the 'packages-adjust-versions-2012-AUG.patch' just after cloning.
 
-2. 'git am --signoff < packages-adjust-versions-2012-AUG.patch'
+  Copy and paste(Ctrl-Shift-V) into your console
+
+  1. 'git apply --check packages-adjust-versions-2012-AUG.patch'
+
+      check the output before you invoke the next command!
+
+  2. 'git am --signoff < packages-adjust-versions-2012-AUG.patch'
+
+  This is also the repo I'm working with until now.
+
+- https://github.com/buserror-uk/minifs.git (the repo of the orginator of minifs,  Michel Pollet)
+
+  Today (2012-SEP-05) a pull request from this repo results in 
+
+    18 files changed, 669 insertions(+), 321 deletions(-)
+
+  against the unpatched repo from http://oomz.net/git/minifs.git
+
+  I haven't made a full build yet and tested on the DF3120, but one should give it a try.
+
+  That's what it was.
+ 
 
 It's also a good idea to install 'etckeeper' before you manipulate your system configuration.
 
