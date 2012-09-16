@@ -1,4 +1,4 @@
-df3120_minifs_build.sf
+df3120_minifs_build.sh
 -----------------------
 This is a wrapper which invokes the true 'minifs_build.sh'.
 Copy this file next to your '/minifs/minifs_build.sh'.
