@@ -1,0 +1,36 @@
+###
+# STATE       : applicable
+# PREREQUESTS : installed 'minifs'
+###
+
+This patch fixes the kernel message
+
+  'EXT2-fs (mmcblk0p1): warning: feature flags set on rev 0 fs, running e2fsck is recommended'
+  'EXT2-fs (mmcblk0p1): warning: mounting ext3 filesystem as ext2'
+
+You can see it after invoking 'dmesg' on a telnet console connected with your DF3120.
+
+Likewise you can test this circumstance on your workstation by invoking
+
+  'sudo dd if=minifs/build-df3120/minifs-full-ext.img | file -'
+
+The output of an unpatched 'minifs' will be:
+
+  '/dev/stdin: Linux rev 0.0 ext3 filesystem data, UUID=00000000-0000-0000-0000-000000000000'
+
+
+Let's start:
+
+  1.Copy 
+
+      apply-ext2fs-patch.sh
+      ext2fs.diff
+
+    into the root of 'minifs'
+
+  2.Invoke './apply-ext2fs-patch.sh'
+
+  3.Invoke './df3120_minifs_build.sh'
+
+  4.Tidy up the copied stuff.
+

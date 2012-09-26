@@ -1,0 +1,27 @@
+From 1c404d757dc240eb29b07042c2a4526f2ea4e6b4 Mon Sep 17 00:00:00 2001
+From: Uli Fuchs <ufuchs@gmx.com>
+Date: Wed, 26 Sep 2012 22:24:58 +0200
+Subject: [PATCH 8/8] 95filesystems.sh: fixed, image was ever written in ext3
+ format despite the kernel configuration
+
+---
+ conf/packages/95filesystems.sh |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/conf/packages/95filesystems.sh b/conf/packages/95filesystems.sh
+index f5a77a5..037615f 100644
+--- a/conf/packages/95filesystems.sh
++++ b/conf/packages/95filesystems.sh
+@@ -127,7 +127,8 @@ deploy-filesystem-ext() {
+ 		-b $size \
+ 		"$out" \
+ 			>>"$BUILD/._filesystem.log" 2>&1 ; then
+-		tune2fs -j "$out" \
++		local isExt2=$(grep -x -c "CONFIG_EXT2_FS=y" "$CONFIG/config_kernel.conf")
++		[ $isExt2 -eq 0 ] && tune2fs -j "$out" \
+ 			>>"$BUILD/._filesystem.log" 2>&1
+ 		echo Done
+ 	else
+-- 
+1.7.9.5
+
